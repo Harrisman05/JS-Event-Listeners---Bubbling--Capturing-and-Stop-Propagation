@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>JS Event Listeners</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>JS Event Listeners</h1>
+    </header>
+
+    <div class="colorBox">Changing color box, click me</div>
+
+    <p>Event Bubbling</p>
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </div>
+    <p>Event caputuring</p>
+    <div class="grandparent" id="captureGrandparent">
+        <div class="parent" id="captureParent">
+            <div class="child" id="captureChild"></div>
+        </div>
+    </div>
+    <p>Stop Propagation - Stops on <span style="color: green;">Child</span> box</p>
+    <div class="grandparent" id="stopGrandparent">
+        <div class="parent" id="stopParent">
+            <div class="child" id="stopChild"></div>
+        </div>
+    </div>
+    <p>Running Event Once - Once execution on <span style="color: green;">Child</span> box</p></p>
+    <div class="grandparent" id="onceGrandparent">
+        <div class="parent" id="onceParent">
+            <div class="child" id="onceChild"></div>
+        </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
